@@ -8,6 +8,8 @@ Personal Assistant
 
 *[Setup](#setup)
 
+*[Commands].(#commands)
+
 *[Specifications](#specifications)
 ## Introduction
 The aim of the project is to build a personal assistant suggesting some tutorials as well as contact details of the expertise of that field.
@@ -33,20 +35,8 @@ Follow the commands in order to run the assistant.
 ## Specifications
 Modules and important functionalities of project are:
 
-- Admin
-  -	Login
-  -	Add Product
-  -	Update Product
-  -	Delete Product
-  -	Confirm Order
-- Customer
-  -	Login
-  -	Logout
-  -	Registration
-  -	Product Details
-  -	Search Product
-  -	Add to cart
-  -	Place Order
-  -	Payment
+- MongoDB Database named as 'exprt-details' is used having details such as name, emailId and contact of the expertise of specific technology.
+- Bot is giving some options in which you might be having some problems and then giving back the user tutorials of that technology as well as details of expertise.
+  
 
 
