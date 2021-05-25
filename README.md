@@ -1,2 +1,2 @@
-# Medicare-Locator-using-Rasa
+# Course-Expertise-Assistance-using-Rasa
 Personal Assistant
