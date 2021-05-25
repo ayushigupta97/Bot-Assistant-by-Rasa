@@ -8,7 +8,7 @@ Personal Assistant
 
 *[Setup](#setup)
 
-*[Commands].(#commands)
+*[Commands](#commands)
 
 *[Specifications](#specifications)
 ## Introduction
@@ -31,7 +31,7 @@ Follow the commands in order to run the assistant.
 - Enter command 'rasa run actions'(to start the rasa server).
 - Enter command 'rasa train'(to train the build model).
 - Enter command 'rasa shell'.
-- Talk to your bot:)
+- Talk to your bot :)
 ## Specifications
 Modules and important functionalities of project are:
 
