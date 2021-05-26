@@ -1,0 +1,80 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - solve
+  - issue_part
+
+entities:
+  - technology_type
+
+slots:
+  technology_type:
+    type: text
+
+responses:
+  utter_greet:
+  - text: "Hii!! Good to see you. Welcome folks"
+  - text: "Hello, welcome to folks"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_how_can_i_help:
+  - text: How can I help you?
+  - text: Tell me your issue.
+  - text: What problem are you facing?
+
+  utter_technology: 
+  - text: |+
+     Which technology are you working? Select any one of these... 
+     1.Database
+     2.Php
+     3.JavaScript or HTML or CSS
+     4. Machine Learning
+     5. Angular or Node
+     6.Perl
+     7.Ruby
+     8.Other
+  - text: |+
+     Let me know your technologies first. Select any one of these...
+     1.Database
+     2.Php
+     3.JavaScript or HTML or CSS
+     4. Machine Learning
+     5. Angular or Node
+     6.Perl
+     7.Ruby
+     8.Other
+
+  utter_exact_topic:
+  - text: Let me give you some tutorials of {technology_type} which might help you.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+- action_ask_technology
+- action_give_tutorial
+- utter_technology
+- action_give_expert
